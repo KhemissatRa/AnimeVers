@@ -11,7 +11,7 @@ function App() {
 
   return (
       
-    <Router>
+    <Router basename="/AnimeVers">
     <AnimeProvider>
 <div className="max-w-screen min-h-screen bg-[#181e2b]">
     <Nav/>
