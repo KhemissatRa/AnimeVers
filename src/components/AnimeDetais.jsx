@@ -9,7 +9,8 @@ export default function AnimeDetails() {
     useEffect(()=>{
         localStorage.setItem("anime", JSON.stringify(favList));
 
-    },[favList]);       const details = animeList.find((item) => item.mal_id === Number(id));
+    },[favList]);   
+        const details = animeList.find((item) => item.mal_id === Number(id));
   
     const AddtoFav = () => {
 
