@@ -7,6 +7,8 @@ import AnimeProvider from "./context/context"
 import Footer from "./components/footer"
 import AnimeDetais from "./components/AnimeDetais"
 import Favorite from "./components/Favorite"
+import './index.css';
+
 function App() {
 
   return (
