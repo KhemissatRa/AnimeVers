@@ -33,7 +33,7 @@ export default function AnimeDetails() {
     }
 
     return (
-        <div className=" p-4 max-w-full flex flex-col justify-center items-center bg-white min-h-full">
+        <div className="  max-w-full flex flex-col justify-center items-center bg-white min-h-full">
             <h1 className="text-center text-4xl p-4 text-red-600">{details.title}</h1>
             <div className=" flex shadow-xl flex-col md:flex-row justify-center space-x-8 space-y-8 p-8 mx-auto rounded-xl items-center bg-gray-800 max-w-[900px] min-h-[500px]">
                 <img className="rounded-xl" src={details.images?.jpg?.image_url} alt={details.title} width="300" />
@@ -50,7 +50,7 @@ export default function AnimeDetails() {
                     <p className="text-2xl text-blue-800">
                         <strong>Studio:</strong> {details.studios?.length > 0 ? details.studios[0].name : "Unknown"}
                     </p>
-                    <p className="text-white">
+                    <p className="text-white text-xs">
                         <strong>Synopsis:</strong> {details.synopsis}
                     </p>
                     <p className="text-2xl text-red-600">
@@ -68,10 +68,10 @@ export default function AnimeDetails() {
                 </div>
             </div>
             <button
-                className="w-48 h-8 hover:shadow-xl active:bg-blue-800 mx-auto rounded-xl bg-red-600 my-8 text-gray-800"
+                className="w-48 h-8 hover:shadow-xl focus:bg-red-600 focus:text-white mx-auto rounded-xl bg-blue-400 my-8 text-gray-800"
                 onClick={AddtoFav}
             >
-            Add to favorite <i className="fa-solid fa-heart text-gray-600"></i>
+            Add to favorite <i className="fa-solid fa-heart  text-red-600 focus:text-white"></i>
             </button>
             
         </div>
