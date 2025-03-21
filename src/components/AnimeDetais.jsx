@@ -33,9 +33,9 @@ export default function AnimeDetails() {
     }
 
     return (
-        <div className="max-w-full flex flex-col justify-center items-center bg-white min-h-full">
+        <div className=" p-4 max-w-full flex flex-col justify-center items-center bg-white min-h-full">
             <h1 className="text-center text-4xl p-4 text-red-600">{details.title}</h1>
-            <div className="flex shadow-xl justify-center space-x-8 space-y-8 p-8 mx-auto rounded-xl items-center bg-gray-800 w-[900px] min-h-[500px]">
+            <div className=" flex shadow-xl flex-col md:flex-row justify-center space-x-8 space-y-8 p-8 mx-auto rounded-xl items-center bg-gray-800 max-w-[900px] min-h-[500px]">
                 <img className="rounded-xl" src={details.images?.jpg?.image_url} alt={details.title} width="300" />
                 <div>
                     <p className="text-2xl text-red-600">

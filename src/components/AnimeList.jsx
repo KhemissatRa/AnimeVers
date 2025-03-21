@@ -26,14 +26,14 @@ if(loading){
 }
   return (
     <div className='bg-white min-h-screen p-6'>
-      <div className='w-full flex flex-col items-center space-y-6'>
-        <h1 className='text-5xl italic font-bold'>
+      <div className='w-full text-center flex flex-col items-center space-y-6'>
+        <h1 className='text-5xl  italic font-bold'>
           Browse Top <span className='text-red-600'>Anime</span>
         </h1>
 
-        <div className='relative w-[400px]'>
+        <div className='relative  max-w-[400px]'>
           <input
-            className='w-full border-2 border-[#181e2b] h-[40px] rounded-full px-4 text-black focus:outline-none focus:ring-2 focus:ring-red-600'
+            className='max-w-full border-2 border-[#181e2b] h-[40px] rounded-full px-4 text-black focus:outline-none focus:ring-2 focus:ring-red-600'
             type='text'
             placeholder='Find your anime...'
             onChange={(e) => setSearch(e.target.value)}

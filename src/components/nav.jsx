@@ -28,10 +28,9 @@ export default function Nav() {
         }`}
       >
          <li><Link to='About' smooth={true} duration={500} className="cursor-pointer">About Us </Link></li>
-            <li><Link to='Solution' smooth={true} duration={500} className="cursor-pointer"> Solutions </Link></li>
-            <li> <Link to='Testimonials' smooth={true} duration={500} className="cursor-pointer">Testimonials </Link></li>
-            <li> <Link to='Resources' smooth={true} duration={500} className="cursor-pointer"> Resources</Link></li>
-      </ul>
+         <li><Link to='/'  >Home</Link></li>
+            <li> <Link to='/fav'  >Favorite </Link> <i className="fa-solid fa-heart text-red-600"></i></li>
+    </ul>
       </div>
         </div>
         <div className='hidden md:flex space-x-4'>
