@@ -1,3 +1,4 @@
+import MyImage from "../assets/DrawKit Vector Illustrations Halloween Illustrations (8).png"
 export default function Header() {
   return (
     <div className="flex flex-col md:flex-row max-w-screen justify-center items-center space-x-8 px-12 py-8 bg-[#181e2b]">
@@ -11,7 +12,7 @@ export default function Header() {
       </div>
       <div className="w-1/2 flex justify-center">
         <img
-          src="src\assets\PNG\DrawKit Vector Illustrations Halloween Illustrations (8).png"
+          src={MyImage}
           alt="Anime Illustration"
           className="  md:max-w-full   min-h-full drop-shadow-lg rounded-lg"
         />
