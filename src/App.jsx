@@ -8,12 +8,12 @@ import Footer from "./components/footer"
 import AnimeDetais from "./components/AnimeDetais"
 import Favorite from "./components/Favorite"
 import './index.css';
-
+import './App.css'
 function App() {
 
   return (
       
-    <Router basename="/AnimeVerse/" >
+    <Router>     
     <AnimeProvider>
 <div className="max-w-screen min-h-screen bg-[#181e2b]">
     <Nav/>

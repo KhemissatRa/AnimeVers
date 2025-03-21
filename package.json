@@ -1,7 +1,6 @@
 {
   
   "name": "animerating",
-  "homebage": " https://khemissatRa.github.io/AnimeVers/",
   
   "private": true,
   
@@ -23,8 +22,7 @@
     
   "preview": "vite preview",
 
-  "predeploy" : "npm run build",
-  "deploy": "gh-pages -d dist"
+
   
   },
   
