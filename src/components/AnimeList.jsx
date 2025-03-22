@@ -59,11 +59,11 @@ if(loading){
           filteredAnime.map((anime) => (
             <div
               key={anime.mal_id}
-              className='border border-gray-600 bg-[#181e2b] rounded-xl overflow-hidden shadow-lg transform transition duration-300 hover:scale-105'
+              className='border border-red-600 bg-[#181e2b] rounded-xl overflow-hidden shadow-lg transform transition duration-300 hover:scale-105'
             >
               <Link to={`Anime/${anime.mal_id}`}>
-              <img className='w-full h-60 object-cover rounded-t-lg' src={anime.images.jpg.image_url} alt={anime.title} />
-              <h1 className='text-white text-sm p-2'>{anime.title}</h1>
+              <img className='w-full h-60 object-cover p-2 rounded-t-lg' src={anime.images.jpg.image_url} alt={anime.title} />
+              <h1 className='text-white text-center text-sm p-2'>{anime.title}</h1>
               </Link>
             </div>
           ))
@@ -77,8 +77,8 @@ if(loading){
         nextLabel={"Next "}
         pageCount={Math.ceil(animeList.length / animePerPage)}
         onPageChange={(e) => setCurrentPage(e.selected)}
-        containerClassName={"border border-2 flex justify-center items-center space-x-4 border-red-600 text-white bg-gray-800"}
-        activeClassName={"text-red-600 border border-red-600 rounded-xl w-4 text-center"}
+        containerClassName={" flex justify-center  rounded-full items-center  space-x-4 border-red-600 text-white bg-gray-800"}
+        activeClassName={" focus:text-red-600 border border-2 border-red-600  rounded-full w-4 text-center"}
       /> 
     </div>
   
